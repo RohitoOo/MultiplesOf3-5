@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+<button class="btn btn-primary" onclick="myFunction()">Multiples of Three // Five // Three & Five</button>
+
+
+<table id="table">
+<tr id="row"></tr>
+</table>
+
+<style media="screen">
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+
+<script>
+
+for (i= 1 ; i <= 100 ; i ++){
+
+document.write ( "</br>" + i   )
+
+}
+document.write ( )
+
+function myFunction() {
+for ( i = 1 ; i <= 100 ; i ++){
+
+  var row = document.getElementById("row");
+  if (i % 3 == 0 && i % 5 == 0 ) {
+
+    document.write( "</br>" + i + ' is a multiple of Three & Five ' )
+  }
+
+  else if (i % 3 == 0 ) {
+
+    document.write( "</br>" + i + ' is a multiple of Three ' )
+  }
+
+  else if (i % 5 == 0 ) {
+
+    document.write( "</br>" + i + ' is a multiple of Five ' )
+  }
+
+
+
+  else {
+
+    document.write ( "</br>" + i   )
+  }
+
+}
+
+
+}
+
+
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style>
+
+body{
+
+  font-family: fantasy;
+  align-items: center;
+  font-size: 15px;
+  margin: 14px;
+}
+
+</style>
+
+</body>
+</html>
